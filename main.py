@@ -1,9 +1,9 @@
 # 1 Вебинар.
-# 2 задание
-seconds_in = int(input('Введите время в секундах: ', ))
-
-hours = seconds_in//3600
-minutes = (seconds_in - hours*3600)/60
-seconds = (seconds_in - hours*3600) - (minutes//1)*60
-print(f'Это {hours} час(-а/-ов)', '{:.0f}'.format(minutes), 'минут(-ы)', '{:.0f}'.format(seconds), 'секунд(-ы).')
+# 3 задание
+n = input('Введите число n: ', )
+nn = n + n
+nnn = n + nn
+print('Конкатенация введенного числа: ', n, nn, nnn)
+summa = int(n) + int(nn) + int(nnn)
+print('Сумма конкатенированных значений от введенного числа: ', summa)
 
