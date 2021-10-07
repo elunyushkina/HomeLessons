@@ -1,13 +1,14 @@
-# 1 Вебинар.
-# 4 задание
-number = input('Введите целое положительное число: ', )
-max_num = 0
-n = 0
-while n != len(number):
-    x = int(number[n])
-    if max_num < x:
-        max_num = x
-    n +=1
+# 1 Урок.
+# 5 задание
+gain = int(input('Укажите выручку фирмы: ', ))
+outgoing = int(input('Укажите издержки фирмы: ', ))
+if gain > outgoing:
+    profit = gain - outgoing
+    rentab = profit / gain
+    print(f'Ваша фирма работает с прибылью {profit}, и с рентабельностью = ', '{:.3f}'.format(rentab), ', поздравляем.')
+    members = int(input('Введите число сотрудников фирмы: ' ))
+    profit_1member = profit / members
+    print(f'Прибыль фирмы в рассчете на одного человека составила: ', '{:.3f}'.format(profit_1member))
 else:
-    print(f'Самая большая цифра в числе = {max_num}')
+    print('Фирма работает в убыток, сожалеем.')
 
